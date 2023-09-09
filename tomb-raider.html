@@ -61,6 +61,7 @@ img {
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+
 }
 
 .download-button:hover {
@@ -151,22 +152,21 @@ footer {
     <p>
         To Play: Make Sure You Are Click On This App, Then Start Playing the game
     </p>
-    <video src="20230908_153210.mp4" controls width="500px">
+    <video src="20230908_153210.mp4" id="video" controls width="700" style="margin-top: 20px" >
 
     </video>
-    <br/>
-    <br/>
-    <br/>
-    <hr/>
-    <a id="a2" class="download-button" href="Tomb%20Raider%20v1.0-1.0.717.1%20Plus%2011%20Trainer.exe" target="_blank">
-        Download
-    </a>
+
+     <div>
+            <a id="a2" class="download-button" href="Tomb%20Raider.zip" target="_blank">
+                Download
+            </a>
+      </div>
     <div id="div3">
 
     </div>
 
 </div>
-        </div>
+
     </main>
     <footer>
     <div class="footer-content">
@@ -189,10 +189,11 @@ footer {
 
 
 <script>
+
     const a2 = document.getElementById('a2');
     const div = document.getElementById('div3');
     a2.addEventListener('click', function (){
-        div.innerHTML = `<h3>Downloading </h3> <p>If Not Downloading</p> <a href="Tomb%20Raider%20v1.0-1.0.717.1%20Plus%2011%20Trainer.exe" target="_parent">Click Here</a>`
+        div.innerHTML = `<h3>Downloading </h3> <p>If Not Downloading</p> <a href="Tomb%20Raider.zip" target="_parent">Click Here</a>`
     })
 </script>
 </body>
